@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,22 +10,33 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700,800,900&display=swap" rel="stylesheet">
-    <title>VEGA -  The multi-purpose discord bot</title>
+    <title>VEGA - The multi-purpose discord bot</title>
     <link rel="shortcut icon" href="assets/Logo.webp" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.0/dist/sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.0/dist/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.0/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-<nav class="navbar navbar-expand-lg bg-transparent">
-    <img src="assets/Logo.webp" id='headerlogo' width="50" height="50">
-    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 20px !important">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#/">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#features_section">Features</a>
-            </li>
-        </ul>
-        <!--<div class="nav-item dropdown">
+    <nav class="navbar navbar-expand-lg bg-transparent">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="assets/menuIcon.svg" width="20px" height="20px" style="max-width: none !important;">
+        </button>
+        <img src="assets/Logo.webp" id='headerlogo' width="50" height="50">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 20px !important">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#features_section">Features</a>
+                </li>
+            </ul>
+            <!--<div class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Documentation
             </a>
@@ -38,85 +50,118 @@
         <div class="nav-item">
             <a class="nav-link" href="#">About</a>
         </div>-->
-        <a href="https://discord.com/oauth2/authorize?client_id=882539656242147349&permissions=8&scope=bot"><button class="btn login-btn btn-outline-accent my-2 my-sm-0" style="font-size: 10px !important;font-family: poppins !important;">Add to Server</button></a>
+            <a href="https://discord.com/oauth2/authorize?client_id=882539656242147349&permissions=8&scope=bot"><button
+                    class="btn login-btn btn-outline-accent my-2 my-sm-0"
+                    style="font-size: 10px !important;font-family: poppins !important;">Add to Server</button></a>
+        </div>
+    </nav>
+    <div class="heading">
+        <h1 class="display-5 title">It's time to use <b>Vega</b> in your server.</h1>
+        <p class="subtitle">Vega is a multi-purpose bot ready to skill up and boost up your Discord server<br />Also
+            features auto-moderation, administration, music and much more!</p>
+        <a class="btn btn-primary btn-lg"
+            href="https://discord.com/oauth2/authorize?client_id=882539656242147349&permissions=8&scope=bot"
+            target="_blank" role="button">Get started</a>
+        <a class="btn btn-secondary btn-lg"
+            href="https://discord.com/oauth2/authorize?client_id=882539656242147349&permissions=8&scope=bot"
+            target="_blank" role="button">Add to server</a>
+        <br /><br /><br /><br /><br /><br />
     </div>
-</nav>
-<div class="heading">
-    <h1 class="display-5 title">It's time to use <b>Vega</b> in your server.</h1>
-    <p class="subtitle">Vega is a multi-purpose bot ready to skill up and boost up your Discord server<br />Also features auto-moderation, administration, music and much more!</p>
-    <a class="btn btn-primary btn-lg" href="https://discord.com/oauth2/authorize?client_id=882539656242147349&permissions=8&scope=bot" target="_blank" role="button">Get started</a>
-    <a class="btn btn-secondary btn-lg" href="https://discord.com/oauth2/authorize?client_id=882539656242147349&permissions=8&scope=bot" target="_blank" role="button">Add to server</a>
-    <br /><br /><br /><br /><br /><br />
-</div>
-<div class="features" id='features_section'>
-    <div class="title">Features of Vega</div>
-    <div class="subtitle">We provide you the best features in Vega!</div>
-    <div class="cards">
-        <div class="card" style="width: 18rem;">
-        <div class="card-body">
-            <h5 class="card-title">Play Music</h5>
-            <p class="card-text">Remove your boring time and be creative in your work while Vega sings a sweet song for you and your teammates. Play, Pause, Stop and Replay any song whenever, wherever you want.</p>
-        </div>
-    </div>
-        <div class="card" style="width: 18rem;">
-            <div class="card-body">
-                <h5 class="card-title">Welcome</h5>
-                <p class="card-text">Take advantage of the welcome message to inform newcomers about your server rules, topic, or ongoing events. You can design your own welcome card or keep it simple.</p>
+    <div class="features" id='features_section'>
+        <div class="title">Features of Vega</div>
+        <div class="subtitle">We provide you the best features in Vega!</div>
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Play Music</h5>
+                    <p class="card-text">Remove your boring time and be creative in your work while Vega sings a sweet
+                        song for you and your teammates. Play, Pause, Stop and Replay any song whenever, wherever you
+                        want.</p>
+                </div>
             </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <div class="card-body">
-                <h5 class="card-title">Customize</h5>
-                <p class="card-text">Make your bot to perform the way you want. You can customize almost every aspect and feature of Vega. Also, forgot to mention its 24/7 up for you and your favorite servers.</p>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Welcome</h5>
+                    <p class="card-text">Take advantage of the welcome message to inform newcomers about your server
+                        rules, topic, or ongoing events. You can design your own welcome card or keep it simple.</p>
+                </div>
             </div>
-        </div>
-    </div>
-</div>
-<div class="statistics">
-    <div class="cards">
-        <div class="card statistic" style="width: 18rem;">
-            <div class="card-body">
-                <p class="card-title" style="font-size: 50px !important;line-height: 15px !important;letter-spacing: -0.06em !important;font-weight: bold !important;" id='increasing_servers'>000</h1>
-                <p style="font-weight: bold !important;font-size: 20px !important;">servers</p>
-            </div>
-        </div>
-        <div class="card statistic" style="width: 18rem;">
-            <div class="card-body">
-                <p class="card-title" style="font-size: 50px !important;line-height: 15px !important;letter-spacing: -0.06em !important;font-weight: bold !important;" id='increasing_users'>000</h1>
-                <p style="font-weight: bold !important;font-size: 20px !important;">users</p>
-            </div>
-        </div>
-        <div class="card statistic" style="width: 18rem;">
-            <div class="card-body">
-                <p class="card-title" style="font-size: 50px !important;line-height: 15px !important;letter-spacing: -0.06em !important;font-weight: bold !important;" id='increasing_channels'>000</h1>
-                <p style="font-weight: bold !important;font-size: 20px !important;">channels</p>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Customize</h5>
+                    <p class="card-text">Make your bot to perform the way you want. You can customize almost every
+                        aspect and feature of Vega. Also, forgot to mention its 24/7 up for you and your favorite
+                        servers.</p>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div class="page_end">
-    <div class="start">
-        <div class="card">
-            <div class="card-body gs-card">
-                <div class="title">Ready to try Vega?</div>
-                <div class="subtitle">Invite Vega and start giving your server cool perks!</div>
-                <br />
-                <a class="btn btn-primary btn-lg" href="https://discord.com/oauth2/authorize?client_id=882539656242147349&permissions=8&scope=bot" role="button">Get started</a>
+    <div class="statistics">
+        <div class="cards">
+            <div class="card statistic" style="width: 18rem;">
+                <div class="card-body">
+                    <p class="card-title"
+                        style="font-size: 50px !important;line-height: 15px !important;letter-spacing: -0.06em !important;font-weight: bold !important;"
+                        id='increasing_servers'>000</h1>
+                    <p style="font-weight: bold !important;font-size: 20px !important;">servers</p>
+                </div>
+            </div>
+            <div class="card statistic" style="width: 18rem;">
+                <div class="card-body">
+                    <p class="card-title"
+                        style="font-size: 50px !important;line-height: 15px !important;letter-spacing: -0.06em !important;font-weight: bold !important;"
+                        id='increasing_users'>000</h1>
+                    <p style="font-weight: bold !important;font-size: 20px !important;">users</p>
+                </div>
+            </div>
+            <div class="card statistic" style="width: 18rem;">
+                <div class="card-body">
+                    <p class="card-title"
+                        style="font-size: 50px !important;line-height: 15px !important;letter-spacing: -0.06em !important;font-weight: bold !important;"
+                        id='increasing_channels'>000</h1>
+                    <p style="font-weight: bold !important;font-size: 20px !important;">channels</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page_end">
+        <div class="start">
+            <div class="card">
+                <div class="card-body gs-card">
+                    <div class="title">Ready to try Vega?</div>
+                    <div class="subtitle">Invite Vega and start giving your server cool perks!</div>
+                    <br />
+                    <a class="btn btn-primary btn-lg"
+                        href="https://discord.com/oauth2/authorize?client_id=882539656242147349&permissions=8&scope=bot"
+                        role="button">Invite VEGA</a>
+                    <button class="btn btn-primary btn-lg" id='showCreditsBTN'>Credits</button>
+                </div><br />
+            </div>
+        </div>
+        <div class="footer">
+            <div class="bot-footer">
+                <img src="assets/Logo.webp" width="100" style="margin-bottom: 20px; border-radius: 50%"><br />
+                <p id='footer_copyright'>Copyright © Vega Community - 2021</p>
+                <a href="https://discord.gg/Pauq7cD7xM" target="_blank" style="text-decoration:none;"><i
+                        class="fa-brands fa-light fa-discord fa-5x"></i></a>
+                <a href="https://www.instagram.com" target="_blank" style="text-decoration:none;"><i
+                        class="fab fa-instagram fa-5x"></i></a>
             </div><br />
-        </div>
-    </div>
-    <div class="footer">
-        <div class="bot-footer">
-            <img src="assets/Logo.webp" width="100" style="margin-bottom: 20px; border-radius: 50%"><br />
-            <p id='footer_copyright'>Copyright © Vega Community - 2021</p>
-        </div><br/>
-        <div class="nouridio"><p>website designed by</p> <br><a href="https://github.com/Swastik-Projects"> Swastik Bhattacharjee</a></div>
-    </di
-</div>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="js/now-ui-kit.min.js"></script>
-<script src="js/script.js"></script>
+            <div class="nouridio">
+                <p>website designed by</p> <br><a href="https://github.com/Swastik-Projects"> Swastik Bhattacharjee</a>
+            </div>
+            </di </div>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                crossorigin="anonymous"></script>
+            <script src="js/now-ui-kit.min.js"></script>
+            <script src="js/script.js"></script>
 </body>
+
 </html>
