@@ -2,6 +2,7 @@ var footer_copyright = document.getElementById("footer_copyright");
 var increasing_servers = document.getElementById("increasing_servers");
 var increasing_users = document.getElementById("increasing_users");
 var increasing_channels = document.getElementById("increasing_channels");
+var showCreditsBTN = document.getElementById("showCreditsBTN");
 var year = new Date().getFullYear();
 
 footer_copyright.innerHTML = 'Copyright © [Vega Community] - ' + year;
@@ -9,6 +10,8 @@ footer_copyright.innerHTML = 'Copyright © [Vega Community] - ' + year;
 window.onload = function(){
     increaseNumbers()
 }
+
+showCreditsBTN.addEventListener("click", showCredits);
 
 var speed = 10;
 
@@ -37,5 +40,13 @@ function increaseNumbers(){
 }
 
 //increaseElementNumbers("nbr"); /*Call this funtion with the ID-name for that element to increase the number within*/
+
+function showCredits() {
+  Swal.fire({
+    icon: 'success',
+    title: 'Credits',
+    html: '<p><b>Developers:</b> Edge Tech and Lynx_Offl</p><hr><p><b>Website Designers:</b> Swastik Bhattacharjee</p>',
+  })
+}
 
  
